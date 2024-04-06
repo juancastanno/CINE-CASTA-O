@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(72,66,47);
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    box-shadow: 0 0 30px rgba(255, 241, 158, 0.5);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+header .logo img{
+    height: 80px;
+    width: auto;
+    border-radius: 20%;
+    transition: all 0.3s;
+}
+
+header p{
+    margin-right: 250px;
+    font-size: 28px;
+    color: #d5b45e;
+}
+
+header .logo img:hover{
+    transform: scale(1.1);
+}
+
+header .navlinks{
+    list-style: none;
+    display: flex;
+}
+
+.navlinks li{
+    display: inline-block;
+    font-size: 23px;
+    padding: 0 20px;
+}
+
+header .navlinks li:hover{
+    transform: scale(1.1);
+}
+
+header .navlinks a{
+    color: #eec65e;
+    text-decoration: none;
+    display: block;
+}
+
+/*prueba*/
+header .navlinks .listavertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.452);
+    margin-left: -20px;
+}
+
+.navlinks li:hover{
+    display: block;
+    background-color: rgba(129, 129, 129, 0.555);
+    border-radius: 10px;
+}
+
+.navlinks li:hover .listavertical{
+    display: block;
+}
+
+/*lo nuevo comienza aqui*/
+
+.row_poster{
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row_poster:hover{
+    transform: scale(1.08);
+}
+
+.row_posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row_posterlarge{
+    max-height: 250px;
+    height: auto;
+    width: auto;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.row{
+    color: black;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+/*kjdbjs*/
+
+.basura{
+    background-color: #eec55e77;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.parrafo{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    max-width: 200px;
+}
+
+h2{
+    color: #eec65e;
+    font-size: 35px;
+    font-family: Bernadette;
+}
+
+html{
+    scroll-behavior: smooth;
+}
